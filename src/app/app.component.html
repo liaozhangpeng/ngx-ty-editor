@@ -1,11 +1,20 @@
 <h2>ngx-ty-editor</h2>
 <p>
-  This is demo for tingyun neuralert incident editor
+  This is a demo for tingyun neuralert incident editor
 </p>
 
 <br>
 <br>
-<div>
-  <!-- <button>edit</button> -->
+<div style="margin: 20px 10px;">
+  <button (click)="save()">save</button>
+  <button (click)="export('docx')">export to docx</button>
+  <button (click)="export('pdf')">export to pdf</button>
+  <button (click)="showAuthor()">show editors' name</button>
 </div>
 <div id="ty-editor" class="editor-container"></div>
+
+<hr>
+<br><br><br>
+<div>
+  <app-my-editor></app-my-editor>
+</div>

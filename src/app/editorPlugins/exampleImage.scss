@@ -1,0 +1,27 @@
+.ty-header{
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+
+
+  .auth-123{
+    &::after{
+      height: 90%;
+      position: absolute;
+      padding: 0px 4px;
+      top: 0px;
+      left: -100px;
+      display: block;
+      content: '廖张鹏';
+      color: red;
+      z-index: 2;
+      border-right: 3px solid red;
+      font-size: 12px;
+    }
+  }
+
